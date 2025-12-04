@@ -1,0 +1,9 @@
+[apps.HelloWorld]
+product = "HelloWorld"
+bundle_identifier = "com.yourname.HelloWorld"
+version = "1.0.0"
+minimum_macos_version = "15"
+category = "public.app-category.utility"
+icon = "./Sources/AppIcon.png"
+
+[apps.HelloWorld.extra_plist_entries]
