@@ -56,7 +56,7 @@
 --semicolons never
 --short-optionals always
 --single-line-for-each convert
---stored-var-attributes prev-line
+--stored-var-attributes same-line
 --tab-width 2
 --type-attributes prev-line
 --type-body-marks remove
