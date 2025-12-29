@@ -11,6 +11,14 @@ While the starter code uses SwiftUI, there should be no issues if you prefer to 
 
 ## Setup
 
+The easiest way to get started with this template is with [create-mac-app](https://github.com/ghall89/create-mac-app) with the following command:
+
+`curl -s https://raw.githubusercontent.com/ghall89/create-mac-app/refs/heads/main/create-mac-app.sh | bash -s -- ProjectName`
+
+Replace ProjectName with your desired project name (no spaces).
+
+This will download the template, and replace the `{{bundle_name}}` and `{{bundle_id}}` placeholders with the appropriate values, based on your project name.
+
 ### Install Tooling
 
 **_Note: Ensure you do the steps in order if you do not have Mint installed._**
