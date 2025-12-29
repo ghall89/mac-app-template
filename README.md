@@ -1,15 +1,13 @@
 # mac-app-template
 
-A template for creating native macOS apps without using Xcode.
+A template for creating native macOS apps without using Xcode (though Xcode is required to be installed).
 
 While the starter code uses SwiftUI, there should be no issues if you prefer to use AppKit to develop your UI. 
 
 ## Prerequisites
 
-- [task](https://taskfile.dev/)
-- [mint](https://github.com/yonaskolb/Mint)
-    - [swift-bundler](https://swiftbundler.dev/documentation/swift-bundler)
-- [create-dmg](https://github.com/create-dmg/create-dmg) 
+- [Xcode](https://developer.apple.com/xcode/)
+- [Homebrew](https://brew.sh/)
 
 ## Setup
 
