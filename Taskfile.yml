@@ -44,11 +44,6 @@ tasks:
     cmds:
       - "mint run swift-bundler run"
 
-  format:
-    desc: "Format code"
-    cmds:
-      - "swift format Sources --recursive"
-
   clean:
     desc: "Clean build folders"
     cmds:
@@ -59,3 +54,8 @@ tasks:
     desc: "Store credentials from .env in Keychain"
     cmds:
       - "xcrun notarytool store-credentials $KEYCHAIN_PROFILE --apple-id $APPLE_ID --team-id  $TEAM_ID --password $PASSWORD"
+
+  format:
+    desc: "Swift format"
+    cmds:
+      - "swiftformat ."
