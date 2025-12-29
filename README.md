@@ -1,4 +1,4 @@
-# macos-template
+# mac-app-template
 
 A template for creating native macOS apps without using Xcode.
 
@@ -15,11 +15,10 @@ While the starter code uses SwiftUI, there should be no issues if you prefer to 
 
 ### Install Tooling
 
-1. Install task, mint, and create-dmg, if they aren't already installed. The suggested way to do this is through [homebrew](https://brew.sh)
-    - task - `brew install go-task`
-    -  mint - `brew install mint`
-    - create-dmg - `brew install create-dmg`
-2. Install swift-bundler with mint - `mint install stackotter/swift-bundler@main`
+**_Note: Ensure you do the steps in order if you do not have Mint installed._**
+  
+1. Install Homebrew dependencies with `brew bundle` from the project directory. 
+2. Install Mint dependencies with `mint bootstrap` from the project directory.
 
 ### Add Credentials For Code Signing and Notarization
 
