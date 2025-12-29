@@ -3,12 +3,12 @@
 import PackageDescription
 
 let package = Package(
-	name: "HelloWorld",
+	name: "{{bundle_name}}",
 	platforms: [.macOS(.v15)],
 	dependencies: [],
 	targets: [
 		.executableTarget(
-			name: "HelloWorld",
+			name: "{{bundle_name}}",
 			dependencies: [],
 		),
 	],

@@ -1,9 +1,9 @@
-[apps.HelloWorld]
-product = "HelloWorld"
-bundle_identifier = "com.yourname.HelloWorld"
+[apps.{{bundle_name}}]
+product = "{{bundle_name}}"
+bundle_identifier = "{{bundle_id}}"
 version = "1.0.0"
 minimum_macos_version = "15"
 category = "public.app-category.utility"
 icon = "./Sources/AppIcon.png"
 
-[apps.HelloWorld.extra_plist_entries]
+[apps.{{bundle_name}}.extra_plist_entries]

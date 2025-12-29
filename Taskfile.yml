@@ -1,7 +1,7 @@
 version: "3"
 
 vars:
-  APP_NAME: "HelloWorld"
+  APP_NAME: "{{bundle_name}}"
   APP_PATH: ".build/bundler/{{.APP_NAME}}.app"
   DMG_PATH: "dist/{{.APP_NAME}}.dmg"
   ENTITLEMENTS: "./entitlements.plist"
