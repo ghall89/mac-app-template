@@ -2,7 +2,7 @@
 
 A template for creating native macOS apps without using Xcode (though Xcode is required to be installed).
 
-While the starter code uses SwiftUI, there should be no issues if you prefer to use AppKit to develop your UI. 
+This template combines [swift-bundler](https://github.com/moreSwift/swift-bundler), [swiftformat](https://github.com/nicklockwood/SwiftFormat), [create-dmg](https://github.com/create-dmg/create-dmg), and [go-task](https://github.com/go-task/task) to provide a mostly pre-configured solution for building a Mac application.
 
 ## Prerequisites
 
@@ -22,8 +22,8 @@ This will download the template, and replace the `{{bundle_name}}` and `{{bundle
 ### Install Tooling
 
 **_Note: Ensure you do the steps in order if you do not have Mint installed._**
-  
-1. Install Homebrew dependencies with `brew bundle` from the project directory. 
+
+1. Install Homebrew dependencies with `brew bundle` from the project directory.
 2. Install Mint dependencies with `mint bootstrap` from the project directory.
 
 ### Add Credentials For Code Signing and Notarization
@@ -50,12 +50,7 @@ Finally, run `task store:credentials` in your terminal from the project root. Th
 
 ## Configuration
 
-Most of the configuration will happen in `Bundler.toml`. You can find the full documentation [here](https://swiftbundler.dev/documentation/swift-bundler/configuration), but I've come across a few innacuracies, which are corrected in the `Bundler.toml` file included in this template:
-
-- `identifier` is incorrect, and should be `bundle_identifier`
-- `[apps.HelloWorld.plist]` is incorrect, and should be `[apps.AutoDock.extra_plist_entries]`
-
-There may be other inaccuracies that I have not come across.
+Most of the configuration will happen in `Bundler.toml`, which is used to configure swift-bundler. You can find the full documentation [here](https://swiftbundler.dev/documentation/swift-bundler/configuration).
 
 ### App Name and Bundle Identifier
 
@@ -63,7 +58,7 @@ Be sure to set the name of your app and its bundle ID in `Bundler.toml` and in `
 
 ## Debugging
 
-To run your app in "debug" mode, run `task debug`. 
+To run your app in "debug" mode, run `task debug`.
 
 This is ideal for testing your app, as logs will be printed directly to your terminal. If needed, you can force quit your app from the terminal with `ctrl` + `C`.
 
@@ -73,7 +68,7 @@ This is ideal for testing your app, as logs will be printed directly to your ter
 
 To build your app, run `task build`.
 
-This will output your binary to `.build/bundler/HelloWorld.app`. 
+This will output your binary to `.build/bundler/HelloWorld.app`.
 
 ### Sign
 
@@ -90,12 +85,12 @@ Before notarizing your app, you will need to create a disk image containing your
 
 ### Notarize
 
-Finally, run `task notarize`. This will upload your disk image to Apple's servers and, if successful, will "staple" the response to your disk image. 
+Finally, run `task notarize`. This will upload your disk image to Apple's servers and, if successful, will "staple" the response to your disk image.
 
 Your app is now ready to share!
 
 ## Final Notes
 
-This template, as well as the documentation, is a work in progress. I would like to make the developer experience for setting up a new project with this template as nice as possible. 
+This template, as well as the documentation, is a work in progress. I would like to make the developer experience for setting up a new project with this template as nice as possible.
 
 If you have any thoughts, questions, or comments, please reach out to me on [Mastodon](https://mastodon.social/@ghalldev), or create an issue.
